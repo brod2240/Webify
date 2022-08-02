@@ -1,0 +1,50 @@
+.app__login {
+    flex: 1;
+    width: 100vh;
+    height: 100vh;
+    flex-direction: column;
+
+    padding: 6rem 2rem 0;
+
+    @media screen and (min-width: 2000px) {
+        padding-top: 8rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding: 6rem 1rem 2rem;
+    }
+}
+
+.app__login-header {
+color: var(--lightGray-color) !important;
+span {
+    color: var(--spotify-green) !important;
+}
+padding: 20rem 0 5rem 0;
+}
+
+.app__login-button {
+display: flex;
+justify-content: center;
+align-items: center;
+
+    button {
+        color: var(--spotify-green);
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        font-weight: 600;
+        font-size: large;
+        &:hover {
+            color: white;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        padding: 0 0 20rem 0;
+    }
+
+}
